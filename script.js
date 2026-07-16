@@ -1,6 +1,6 @@
 const orderForm = document.querySelector('#stressBallForm');
 const checkoutForm = document.querySelector('#checkoutForm');
-const email = 'your-email@example.com'; // TODO: replace with your real email
+const sellerPhone = '8326464404';
 
 function parsePrice(product) {
   const match = product.match(/\$(\d+(?:\.\d{2})?)/);
@@ -36,7 +36,6 @@ checkoutForm.addEventListener('submit', (event) => {
   const product = order.get('product');
   const qty = Number(order.get('quantity') || 1);
   const total = parsePrice(product) * qty;
-  const subject = `New Stress Ball Order - ${checkout.get('customerName')}`;
   const body = `NEW STRESS BALL ORDER
 
 Item: ${product}
@@ -52,7 +51,15 @@ Name: ${checkout.get('customerName')}
 Contact: ${checkout.get('contact')}
 Shipping address: ${checkout.get('address')}
 Payment method: ${checkout.get('payment')}`;
-  window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const smsUrl = `sms:${sellerPhone}?&body=${encodeURIComponent(body)}`;
+  const smsLink = document.querySelector('#smsLink');
+  const thankYou = document.querySelector('#thankYou');
+  if (smsLink) smsLink.href = smsUrl;
+  if (thankYou) {
+    thankYou.hidden = false;
+    thankYou.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+  window.location.href = smsUrl;
 });
 
 updateSummary();
