@@ -49,7 +49,7 @@ Extra details: ${order.get('details') || 'None'}
 CUSTOMER
 Name: ${checkout.get('customerName')}
 Contact: ${checkout.get('contact')}
-Shipping address: ${checkout.get('address')}
+Delivery/pickup location: ${checkout.get('address')}
 Payment method: ${checkout.get('payment')}`;
   const smsUrl = `sms:${sellerPhone}?&body=${encodeURIComponent(body)}`;
   const smsLink = document.querySelector('#smsLink');

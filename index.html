@@ -222,20 +222,18 @@
             <label>Email or phone
               <input name="contact" placeholder="Email or phone number" required />
             </label>
-            <label>Shipping address
-              <textarea name="address" placeholder="Street, city, state, zip" required></textarea>
+            <label>Delivery or pickup location
+              <textarea name="address" placeholder="Address or safe public pickup place" required></textarea>
             </label>
             <label>Payment method
               <select name="payment" required>
-                <option>Pay later — seller will send payment link</option>
-                <option>Cash App</option>
-                <option>PayPal</option>
-                <option>Venmo</option>
-                <option>Zelle</option>
+                <option>Pay on delivery — cash when package is dropped off</option>
+                <option>Pay on pickup — cash when customer picks it up</option>
+                <option>Seller will text payment instructions</option>
               </select>
             </label>
             <button type="submit">Place Order & Text Seller</button>
-            <p class="form-note">This opens a text message with the order details so the seller knows who wants it.</p>
+            <p class="form-note">Payment is collected on delivery/pickup. For safety, meet in a public place or have a parent/adult help.</p>
           </form>
 
         <div id="thankYou" class="thank-you" hidden>
@@ -249,7 +247,7 @@
           <div><span>Item</span><strong id="sumProduct">Pink Cloud Stress Ball</strong></div>
           <div><span>Quantity</span><strong id="sumQty">1</strong></div>
           <div><span>Estimated total</span><strong id="sumTotal">$8.00</strong></div>
-          <p>Shipping/tax can be added later when you know your prices.</p>
+          <p>Payment due when delivered or picked up. Do not meet strangers alone.</p>
         </aside>
       </div>
     </section>
