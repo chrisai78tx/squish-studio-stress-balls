@@ -26,7 +26,7 @@
           <a class="button primary" href="#order">Build My Stress Ball</a>
           <a class="button secondary" href="#products">Shop Options</a>
         </div>
-        <p class="note">Pick colors, texture, theme, and quantity. Great for birthdays, classrooms, offices, and self-care kits.</p>
+        <p class="note">Pick color, size, and quantity from easy options you can actually make. No glitter required.</p>
       </div>
 
       <div class="product-card" aria-label="Sample stress ball product card">
@@ -62,8 +62,8 @@
           <h3>Custom Theme Ball</h3>
           <p class="price">$15</p>
           <ul>
-            <li>Custom color mix</li>
-            <li>Theme or name idea</li>
+            <li>Pick 1–2 colors</li>
+            <li>Name or simple theme</li>
             <li>Gift-ready packaging</li>
           </ul>
           <a href="#order">Choose</a>
@@ -96,8 +96,8 @@
     <section class="section order" id="order">
       <div class="order-copy">
         <p class="eyebrow">Order form</p>
-        <h2>Make your custom stress ball</h2>
-        <p>Fill this out and it opens an email with the order details. We can add Stripe, PayPal, or Shopify checkout next.</p>
+        <h2>Make your stress ball order</h2>
+        <p>Customers choose from simple options, so you only sell what you can actually make. We can add Stripe, PayPal, or Shopify checkout next.</p>
       </div>
 
       <form id="stressBallForm" class="form">
@@ -108,22 +108,38 @@
             <option value="Party Pack - $35">Party Pack - $35</option>
           </select>
         </label>
-        <label>Color or theme
-          <input name="theme" placeholder="Example: pink glitter, ocean blue, birthday theme" required />
+        <label>Main color
+          <select name="color" required>
+            <option>Pink</option>
+            <option>Blue</option>
+            <option>Purple</option>
+            <option>Green</option>
+            <option>Yellow</option>
+            <option>White</option>
+            <option>Surprise me</option>
+          </select>
+        </label>
+        <label>Style
+          <select name="style" required>
+            <option>Plain color</option>
+            <option>Two-color mix</option>
+            <option>Cute face</option>
+            <option>Name on package</option>
+            <option>Surprise style</option>
+          </select>
         </label>
         <label>Quantity
           <input name="quantity" type="number" min="1" value="1" required />
         </label>
-        <label>Texture
-          <select name="texture" required>
-            <option>Soft and smooth</option>
-            <option>Extra squishy</option>
-            <option>Glitter look</option>
-            <option>Surprise me</option>
+        <label>Size
+          <select name="size" required>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
           </select>
         </label>
         <label>Extra details
-          <textarea name="details" placeholder="Names, gift note, colors to avoid, deadline..."></textarea>
+          <textarea name="details" placeholder="Gift note, colors to avoid, deadline, or questions..."></textarea>
         </label>
         <button type="submit">Send Order Request</button>
         <p class="form-note">Replace the email in script.js with your real email before publishing.</p>
