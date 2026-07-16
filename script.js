@@ -8,3 +8,11 @@ form.addEventListener('submit', (event) => {
   const body = `Product: ${data.get('product')}\nQuantity: ${data.get('quantity')}\nMain color: ${data.get('color')}\nStyle: ${data.get('style')}\nSize: ${data.get('size')}\n\nExtra details:\n${data.get('details') || 'None'}`;
   window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
+
+
+document.querySelectorAll('.buy-button').forEach((button) => {
+  button.addEventListener('click', () => {
+    const select = document.querySelector('select[name="product"]');
+    if (select) select.value = button.dataset.product;
+  });
+});
