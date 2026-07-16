@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Squish Studio — Handmade Stress Balls</title>
+  <meta name="description" content="Buy handmade and custom stress balls for gifts, school, work, and calming fidget fun." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">Squish<span>Studio</span></div>
+      <a class="nav-cta" href="#order">Order Now</a>
+    </nav>
+
+    <section class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Handmade calming fidgets</p>
+        <h1>Custom stress balls people actually want to squeeze.</h1>
+        <p class="subhead">Cute, colorful, squishy stress balls made for gifts, school, work desks, party favors, and everyday calm.</p>
+        <div class="actions">
+          <a class="button primary" href="#order">Build My Stress Ball</a>
+          <a class="button secondary" href="#products">Shop Options</a>
+        </div>
+        <p class="note">Pick colors, texture, theme, and quantity. Great for birthdays, classrooms, offices, and self-care kits.</p>
+      </div>
+
+      <div class="product-card" aria-label="Sample stress ball product card">
+        <div class="blob one"></div>
+        <div class="blob two"></div>
+        <div class="blob three"></div>
+        <div class="card-content">
+          <p>BEST SELLER</p>
+          <h2>Cloud Squish</h2>
+          <span>soft • cute • custom colors</span>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section" id="products">
+      <p class="eyebrow center">Shop</p>
+      <h2>Pick your squish</h2>
+      <div class="pricing">
+        <article class="price-card">
+          <h3>Single Stress Ball</h3>
+          <p class="price">$8</p>
+          <ul>
+            <li>1 handmade stress ball</li>
+            <li>Pick your color</li>
+            <li>Simple cute packaging</li>
+          </ul>
+          <a href="#order">Choose</a>
+        </article>
+        <article class="price-card featured">
+          <div class="badge">Popular</div>
+          <h3>Custom Theme Ball</h3>
+          <p class="price">$15</p>
+          <ul>
+            <li>Custom color mix</li>
+            <li>Theme or name idea</li>
+            <li>Gift-ready packaging</li>
+          </ul>
+          <a href="#order">Choose</a>
+        </article>
+        <article class="price-card">
+          <h3>Party Pack</h3>
+          <p class="price">$35</p>
+          <ul>
+            <li>5 stress balls</li>
+            <li>Great for friends/classes</li>
+            <li>Mix-and-match colors</li>
+          </ul>
+          <a href="#order">Choose</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow">Why people buy</p>
+        <h2>Small product. Big comfort.</h2>
+      </div>
+      <div class="steps">
+        <div><span>01</span><p>They’re cute enough to gift and useful enough to keep.</p></div>
+        <div><span>02</span><p>Custom colors make every order feel personal.</p></div>
+        <div><span>03</span><p>Perfect low-price item for TikTok, school, events, and bundles.</p></div>
+      </div>
+    </section>
+
+    <section class="section order" id="order">
+      <div class="order-copy">
+        <p class="eyebrow">Order form</p>
+        <h2>Make your custom stress ball</h2>
+        <p>Fill this out and it opens an email with the order details. We can add Stripe, PayPal, or Shopify checkout next.</p>
+      </div>
+
+      <form id="stressBallForm" class="form">
+        <label>Product
+          <select name="product" required>
+            <option value="Single Stress Ball - $8">Single Stress Ball - $8</option>
+            <option value="Custom Theme Ball - $15">Custom Theme Ball - $15</option>
+            <option value="Party Pack - $35">Party Pack - $35</option>
+          </select>
+        </label>
+        <label>Color or theme
+          <input name="theme" placeholder="Example: pink glitter, ocean blue, birthday theme" required />
+        </label>
+        <label>Quantity
+          <input name="quantity" type="number" min="1" value="1" required />
+        </label>
+        <label>Texture
+          <select name="texture" required>
+            <option>Soft and smooth</option>
+            <option>Extra squishy</option>
+            <option>Glitter look</option>
+            <option>Surprise me</option>
+          </select>
+        </label>
+        <label>Extra details
+          <textarea name="details" placeholder="Names, gift note, colors to avoid, deadline..."></textarea>
+        </label>
+        <button type="submit">Send Order Request</button>
+        <p class="form-note">Replace the email in script.js with your real email before publishing.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <strong>SquishStudio</strong>
+    <span>Handmade stress balls for gifts, calm, and cute desk energy.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
