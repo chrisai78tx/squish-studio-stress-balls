@@ -14,7 +14,7 @@
   <header class="hero">
     <nav class="nav">
       <div class="brand">Squish<span>Studio</span></div>
-      <a class="nav-cta" href="#order">Order Now</a>
+      <a class="nav-cta" href="#checkout">Checkout</a>
     </nav>
 
     <section class="hero-grid">
@@ -154,13 +154,13 @@
 
     <section class="section order" id="order">
       <div class="order-copy">
-        <p class="eyebrow">Order form</p>
-        <h2>Make your stress ball order</h2>
-        <p>Customers choose from simple options, so you only sell what you can actually make. We can add Stripe, PayPal, or Shopify checkout next.</p>
+        <p class="eyebrow">Customize</p>
+        <h2>Pick your details</h2>
+        <p>When someone taps Buy Now, their item goes here. Then they choose color, style, size, and quantity.</p>
       </div>
 
       <form id="stressBallForm" class="form">
-        <label>Product
+        <label>Item
           <select name="product" required>
             <option value="Pink Cloud Stress Ball - $8.00">Pink Cloud Stress Ball - $8.00</option>
             <option value="Ocean Blue Stress Ball - $8.00">Ocean Blue Stress Ball - $8.00</option>
@@ -193,9 +193,6 @@
             <option>Surprise style</option>
           </select>
         </label>
-        <label>Quantity
-          <input name="quantity" type="number" min="1" value="1" required />
-        </label>
         <label>Size
           <select name="size" required>
             <option>Small</option>
@@ -203,12 +200,52 @@
             <option>Large</option>
           </select>
         </label>
+        <label>Quantity
+          <input name="quantity" type="number" min="1" value="1" required />
+        </label>
         <label>Extra details
           <textarea name="details" placeholder="Gift note, colors to avoid, deadline, or questions..."></textarea>
         </label>
-        <button type="submit">Send Order Request</button>
-        <p class="form-note">Replace the email in script.js with your real email before publishing.</p>
+        <a class="checkout-jump" href="#checkout">Continue to Checkout</a>
       </form>
+    </section>
+
+    <section class="section checkout" id="checkout">
+      <div class="checkout-wrap">
+        <div class="checkout-form">
+          <p class="eyebrow">Checkout</p>
+          <h2>Place your order</h2>
+          <form id="checkoutForm" class="form">
+            <label>Your name
+              <input name="customerName" placeholder="Full name" required />
+            </label>
+            <label>Email or phone
+              <input name="contact" placeholder="Email or phone number" required />
+            </label>
+            <label>Shipping address
+              <textarea name="address" placeholder="Street, city, state, zip" required></textarea>
+            </label>
+            <label>Payment method
+              <select name="payment" required>
+                <option>Pay later — seller will send payment link</option>
+                <option>Cash App</option>
+                <option>PayPal</option>
+                <option>Venmo</option>
+                <option>Zelle</option>
+              </select>
+            </label>
+            <button type="submit">Place Order</button>
+            <p class="form-note">This sends the order request. To take card payments directly, connect Stripe or Shopify next.</p>
+          </form>
+        </div>
+        <aside class="summary">
+          <h3>Order summary</h3>
+          <div><span>Item</span><strong id="sumProduct">Pink Cloud Stress Ball</strong></div>
+          <div><span>Quantity</span><strong id="sumQty">1</strong></div>
+          <div><span>Estimated total</span><strong id="sumTotal">$8.00</strong></div>
+          <p>Shipping/tax can be added later when you know your prices.</p>
+        </aside>
+      </div>
     </section>
   </main>
 
