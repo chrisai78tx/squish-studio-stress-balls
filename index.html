@@ -234,9 +234,15 @@
                 <option>Zelle</option>
               </select>
             </label>
-            <button type="submit">Place Order</button>
-            <p class="form-note">This sends the order request. To take card payments directly, connect Stripe or Shopify next.</p>
+            <button type="submit">Place Order & Text Seller</button>
+            <p class="form-note">This opens a text message with the order details so the seller knows who wants it.</p>
           </form>
+
+        <div id="thankYou" class="thank-you" hidden>
+          <h3>Thank you for your order! 💖</h3>
+          <p>Your order text is ready to send. Please press send in your messages app so the seller gets it.</p>
+          <a id="smsLink" class="buy-button" href="#">Open Text Again</a>
+        </div>
         </div>
         <aside class="summary">
           <h3>Order summary</h3>
