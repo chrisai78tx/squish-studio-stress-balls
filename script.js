@@ -42,7 +42,6 @@ Item: ${product}
 Quantity: ${qty}
 Estimated total: $${total.toFixed(2)}
 Main color: ${order.get('color')}
-Style: ${order.get('style')}
 Size: ${order.get('size')}
 Extra details: ${order.get('details') || 'None'}
 
