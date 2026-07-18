@@ -90,6 +90,22 @@ h2 { font-size: clamp(38px, 5vw, 68px); text-align: center; margin-bottom: 30px;
 .mini-ball:after { width: 85px; height: 85px; background: #ff6bb5; box-shadow: -55px 20px 0 #8b5cf6, 55px 20px 0 #22c55e, inset -10px -12px 18px rgba(45,36,51,.12), 0 22px 35px rgba(45,36,51,.12); }
 .name-ball:after { background: linear-gradient(135deg, #ffffff, #ffd1e8); border: 3px solid #ff6bb5; }
 
+
+.color-label {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  z-index: 3;
+  background: rgba(255,255,255,.92);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 13px;
+  font-weight: 900;
+  box-shadow: 0 8px 18px rgba(45,36,51,.10);
+}
+.product-img:after { width: 165px; height: 165px; }
+
 .stars { color: #f6a700; letter-spacing: 2px; font-size: 14px; }
 .shop-card h3 { font-size: 22px; margin: 0; }
 .desc { color: var(--muted); line-height: 1.45; margin: 0; }
