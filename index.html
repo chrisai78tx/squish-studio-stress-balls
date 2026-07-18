@@ -23,7 +23,7 @@
         <h1>Custom stress balls people actually want to squeeze.</h1>
         <p class="subhead">Cute, colorful, squishy stress balls made for gifts, school, work desks, party favors, and everyday calm.</p>
         <div class="actions">
-          <a class="button primary" href="#order">Build My Stress Ball</a>
+          <a class="button primary" href="#products">Shop Stress Balls</a>
           <a class="button secondary" href="#products">Shop Options</a>
         </div>
         <p class="note">Pick color, size, and quantity from easy options you can actually make. No glitter required.</p>
@@ -59,7 +59,7 @@
           <p class="desc">Bold red squish ball with a bright, fun look. Good for energy, gifts, and standing out.</p>
           <p class="stock">In stock</p>
           <p class="price">$8.00</p>
-          <a class="buy-button" href="#order" data-product="Red Stress Ball - $8.00">Buy Now</a>
+          <a class="buy-button" href="#checkout" data-product="Red Stress Ball - $8.00">Buy Now</a>
         </article>
 
         <article class="shop-card">
@@ -69,7 +69,7 @@
           <p class="desc">Orange squish ball with a sunny playful vibe. Great for party favors, backpacks, and desk breaks.</p>
           <p class="stock">In stock</p>
           <p class="price">$8.00</p>
-          <a class="buy-button" href="#order" data-product="Orange Stress Ball - $8.00">Buy Now</a>
+          <a class="buy-button" href="#checkout" data-product="Orange Stress Ball - $8.00">Buy Now</a>
         </article>
 
         <article class="shop-card">
@@ -79,7 +79,7 @@
           <p class="desc">Happy yellow stress ball that feels cheerful and cute. Perfect for smiley gifts and school.</p>
           <p class="stock">In stock</p>
           <p class="price">$8.00</p>
-          <a class="buy-button" href="#order" data-product="Yellow Stress Ball - $8.00">Buy Now</a>
+          <a class="buy-button" href="#checkout" data-product="Yellow Stress Ball - $8.00">Buy Now</a>
         </article>
 
         <article class="shop-card">
@@ -89,7 +89,7 @@
           <p class="desc">Fresh green stress ball with a calm nature look. Nice for relaxing, homework, and quiet fidgets.</p>
           <p class="stock">In stock</p>
           <p class="price">$8.00</p>
-          <a class="buy-button" href="#order" data-product="Green Stress Ball - $8.00">Buy Now</a>
+          <a class="buy-button" href="#checkout" data-product="Green Stress Ball - $8.00">Buy Now</a>
         </article>
 
         <article class="shop-card">
@@ -99,7 +99,7 @@
           <p class="desc">Cool blue stress ball with a calm ocean feel. Great for homework breaks and relaxing your hands.</p>
           <p class="stock">In stock</p>
           <p class="price">$8.00</p>
-          <a class="buy-button" href="#order" data-product="Blue Stress Ball - $8.00">Buy Now</a>
+          <a class="buy-button" href="#checkout" data-product="Blue Stress Ball - $8.00">Buy Now</a>
         </article>
 
         <article class="shop-card">
@@ -109,7 +109,7 @@
           <p class="desc">Purple dream squish ball with a soft magical look. Cute for friends, gifts, and collections.</p>
           <p class="stock">In stock</p>
           <p class="price">$8.00</p>
-          <a class="buy-button" href="#order" data-product="Purple Stress Ball - $8.00">Buy Now</a>
+          <a class="buy-button" href="#checkout" data-product="Purple Stress Ball - $8.00">Buy Now</a>
         </article>
 
         <article class="shop-card">
@@ -119,7 +119,7 @@
           <p class="desc">Sweet pink cloud-style stress ball. Cute, soft-looking, and perfect for girly desk decor.</p>
           <p class="stock">In stock</p>
           <p class="price">$8.00</p>
-          <a class="buy-button" href="#order" data-product="Pink Stress Ball - $8.00">Buy Now</a>
+          <a class="buy-button" href="#checkout" data-product="Pink Stress Ball - $8.00">Buy Now</a>
         </article>
 
         <article class="shop-card">
@@ -129,7 +129,7 @@
           <p class="desc">Clean white stress ball with a simple soft look. Great for custom names, gifts, and minimal style.</p>
           <p class="stock">In stock</p>
           <p class="price">$8.00</p>
-          <a class="buy-button" href="#order" data-product="White Stress Ball - $8.00">Buy Now</a>
+          <a class="buy-button" href="#checkout" data-product="White Stress Ball - $8.00">Buy Now</a>
         </article>
 
       </div>
@@ -147,61 +147,27 @@
       </div>
     </section>
 
-    <section class="section order" id="order">
-      <div class="order-copy">
-        <p class="eyebrow">Customize</p>
-        <h2>Pick your details</h2>
-        <p>When someone taps Buy Now, their item goes here. Then they choose color, style, size, and quantity.</p>
-      </div>
-
-      <form id="stressBallForm" class="form">
-        <label>Item
-          <select name="product" required>
-            <option value="Red Stress Ball - $8.00">Red Stress Ball - $8.00</option>
-            <option value="Orange Stress Ball - $8.00">Orange Stress Ball - $8.00</option>
-            <option value="Yellow Stress Ball - $8.00">Yellow Stress Ball - $8.00</option>
-            <option value="Green Stress Ball - $8.00">Green Stress Ball - $8.00</option>
-            <option value="Blue Stress Ball - $8.00">Blue Stress Ball - $8.00</option>
-            <option value="Purple Stress Ball - $8.00">Purple Stress Ball - $8.00</option>
-            <option value="Pink Stress Ball - $8.00">Pink Stress Ball - $8.00</option>
-            <option value="White Stress Ball - $8.00">White Stress Ball - $8.00</option>
-          </select>
-        </label>
-        <label>Main color
-          <select name="color" required>
-            <option>Red</option>
-            <option>Orange</option>
-            <option>Yellow</option>
-            <option>Green</option>
-            <option>Blue</option>
-            <option>Purple</option>
-            <option>Pink</option>
-            <option>White</option>
-          </select>
-        </label>
-        <label>Size
-          <select name="size" required>
-            <option>Small</option>
-            <option>Medium</option>
-            <option>Large</option>
-          </select>
-        </label>
-        <label>Quantity
-          <input name="quantity" type="number" min="1" value="1" required />
-        </label>
-        <label>Extra details
-          <textarea name="details" placeholder="Gift note, colors to avoid, deadline, or questions..."></textarea>
-        </label>
-        <a class="checkout-jump" href="#checkout">Continue to Checkout</a>
-      </form>
-    </section>
-
     <section class="section checkout" id="checkout">
       <div class="checkout-wrap">
         <div class="checkout-form">
           <p class="eyebrow">Checkout</p>
           <h2>Place your order</h2>
           <form id="checkoutForm" class="form">
+            <label>Item
+              <select name="product" required>
+                <option value="Red Stress Ball - $8.00">Red Stress Ball - $8.00</option>
+                <option value="Orange Stress Ball - $8.00">Orange Stress Ball - $8.00</option>
+                <option value="Yellow Stress Ball - $8.00">Yellow Stress Ball - $8.00</option>
+                <option value="Green Stress Ball - $8.00">Green Stress Ball - $8.00</option>
+                <option value="Blue Stress Ball - $8.00">Blue Stress Ball - $8.00</option>
+                <option value="Purple Stress Ball - $8.00">Purple Stress Ball - $8.00</option>
+                <option value="Pink Stress Ball - $8.00">Pink Stress Ball - $8.00</option>
+                <option value="White Stress Ball - $8.00">White Stress Ball - $8.00</option>
+              </select>
+            </label>
+            <label>Quantity
+              <input name="quantity" type="number" min="1" value="1" required />
+            </label>
             <label>Your name
               <input name="customerName" placeholder="Full name" required />
             </label>
