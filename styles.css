@@ -174,3 +174,6 @@ footer strong { color: var(--text); font-family: Fredoka; font-size: 22px; }
   .price-card.featured { transform: none; }
   footer { flex-direction: column; }
 }
+
+/* Product cards use inline color circles now. */
+.product-img:after { display: none !important; }
