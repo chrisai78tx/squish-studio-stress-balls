@@ -103,6 +103,10 @@ h2 { font-size: clamp(38px, 5vw, 68px); text-align: center; margin-bottom: 30px;
 .name-ball:after { background: linear-gradient(135deg, #ffffff, #ffd1e8); border: 3px solid #ff6bb5; }
 
 
+.real-ball { width: 165px; height: 165px; border-radius: 50%; display: block; box-shadow: inset -18px -22px 30px rgba(45,36,51,.18), 0 22px 35px rgba(45,36,51,.18); z-index: 2; }
+.product-img .real-ball + * { display:none; }
+.product-img:has(.real-ball):after { display:none; }
+
 .color-label {
   position: absolute;
   left: 14px;
